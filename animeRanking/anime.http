@@ -1,0 +1,31 @@
+GET http://localhost:5228/animes
+
+###
+GET http://localhost:5228/animes/1
+
+###
+POST http://localhost:5228/animes
+Content-Type: application/json
+
+{
+  "Name": "Solo Leveling",
+  "GenreID": 1,
+  "Ranking": "8.38",
+  "Season": "Winter 2024"
+}
+
+###
+PUT http://localhost:5228/animes/1
+Content-Type: application/json
+
+  {
+    "id": 1,
+    "name": "KonoSuba",
+    "genre": "Yaction",
+    "ranking": 8.10,
+    "season": "Winter 2016"
+  }
+
+###
+DELETE http://localhost:5228/animes/1
+Content-Type: application/json
